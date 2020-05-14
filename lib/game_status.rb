@@ -16,4 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  WIN_COMBINATIONS.any? { |combination| combination.all? { |index| 
+  position_taken?(board,index) && board[index] == "X"  } || combination.all? { |index| 
+  position_taken?(board,index) && board[index] == "O"  }
+}
 end
