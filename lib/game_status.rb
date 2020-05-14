@@ -30,6 +30,6 @@ end
 
 def draw?(board)
   board.none? do |position|
-    !(position.nil? || position == " ")
+    (position.nil? || position == " ")
   end
 end
