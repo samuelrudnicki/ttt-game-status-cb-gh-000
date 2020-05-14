@@ -23,7 +23,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |position| 
+  board.all? do |position|
     !(position.nil? || position == " ")
   end
 end
