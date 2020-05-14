@@ -21,3 +21,7 @@ def won?(board)
   position_taken?(board,index) && board[index] == "O"  })
 }
 end
+
+def full?(board)
+  board.all? { |position| position_taken?(board,position)  }
+end
