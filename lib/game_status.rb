@@ -23,9 +23,13 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? { |position| !(position.nil? || position == " ")  }
+  board.all? do
+    |position| !(position.nil? || position == " ")
+  end 
 end
 
 def draw?(board)
-  board.none? { |position| !(position.nil? || position == " ")  }
+  board.none? do |position| 
+    !(position.nil? || position == " ")
+  end
 end
