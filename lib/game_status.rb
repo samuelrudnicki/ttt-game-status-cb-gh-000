@@ -33,3 +33,6 @@ def draw?(board)
     (position.nil? || position == " ") || won?(board)
   end
 end
+
+def over?(board)
+end
