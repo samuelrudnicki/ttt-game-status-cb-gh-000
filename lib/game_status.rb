@@ -25,11 +25,11 @@ end
 def full?(board)
   board.all? do
     |position| !(position.nil? || position == " ")
-  end 
+  end
 end
 
 def draw?(board)
-  board.none? do |position| 
+  board.none? do |position|
     !(position.nil? || position == " ")
   end
 end
