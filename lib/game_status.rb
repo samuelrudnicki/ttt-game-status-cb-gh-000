@@ -25,3 +25,7 @@ end
 def full?(board)
   board.all? { |position| !(position.nil? || position == " ")  }
 end
+
+def draw?(board)
+  board.none? { |position| !(position.nil? || position == " ")  }
+end
